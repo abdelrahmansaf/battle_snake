@@ -18,12 +18,11 @@ function handleIndex(request, response) {
   var battlesnakeInfo = {
     apiversion: '1',
     author: '',
-    color: '#7CAFC4',
-    head: 'default',
-    tail: 'curled'
+    "color": "#00ff99",
+    "head": "snowman",
+    "tail": "curled"
   }
   response.status(200).json(battlesnakeInfo)
-}
 
 function handleStart(request, response) {
   var gameData = request.body
